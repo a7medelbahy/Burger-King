@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <!-- CSS style -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/burger_king.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top w-100 bg-white">
+        <div class="container">
+            <a class="navbar-brand fs-2 fw-bold" href="#">Burger <span>King</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feature">Feature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#chef">Chef</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#booking">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Landing -->
+    <div class="landing text-center position-relative d-flex justify-content-center align-items-center">
+        <div class="container">
+            <h2>Best <span>Quality</span> Ingredients</h2>
+            <p class="text-light fs-4 mt-4 mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Nulla accusantium deleniti magnam pariatur</p>
+            <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+                <a class="btn main-btn me-3" href="#">View Menu</a>
+                <a class="btn main-btn book" href="#">Book Table</a>
+            </div>
+        </div>
+    </div>
+    <!-- Booking -->
+    <div class="booking" id="booking">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <div class="booking-text text-center text-lg-start">
+                        <div class="main-heading">
+                            <p>Book A Table</p>
+                            <h2>Book Your Table For Private Dinners & Happy Hours</h2>
+                        </div>
+                        <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
+                            mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida
+                            condimentum, viverra quis sem.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur
+                            facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum,
+                            viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur
+                            convallis porttitor. Aliquam interdum at lacus non blandit.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="booking-form pt-5 pb-5 ps-4 pe-4">
+                        <form name="booking" action="#">
+                            <div class="enter-data d-flex justify-content-between align-items-center p-2 mb-3">
+                                <input class="d-block w-100" type="text" placeholder="Name">
+                                <i class="fa-solid fa-user text-light d-inline-block"></i>
+                            </div>
+                            <div class="enter-data d-flex justify-content-between align-items-center p-2 mb-3">
+                                <input class="d-block w-100" type="email" placeholder="E-mail">
+                                <i class="fa-solid fa-envelope text-light d-inline-block"></i>
+                            </div>
+                            <div class="enter-data d-flex justify-content-between align-items-center p-2 mb-3">
+                                <input class="d-block w-100" type="tel" placeholder="Moile">
+                                <i class="fa-solid fa-mobile text-light d-inline-block"></i>
+                            </div>
+                            <div class="enter-data d-flex justify-content-between align-items-center p-2 mb-3">
+                                <input class="d-block w-100 text-light" type="date" placeholder="date">
+                            </div>
+                            <div class="enter-data d-flex justify-content-between align-items-center p-2 mb-3">
+                                <input class="d-block w-100 text-light" type="time" placeholder="date">
+                            </div>
+                            <div class="enter-data d-flex justify-content-between align-items-center p-2 mb-5">
+                                <input class="d-block w-100 text-light" list="kind" placeholder="select Section">
+                                <datalist id="kind">
+                                    <option value="Noraml" selected></option>
+                                    <option value="Silver" selected></option>
+                                    <option value="Vip" selected></option>
+                                    <option value="Gold" selected></option>
+                                </datalist>
+                            </div>
+                            <input class="d-block p-2 w-100" type="submit" value="Book Now">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div class="about text-center text-lg-start" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="image position-relative">
+                        <img class="img-fluid" src="images/about.jpg" alt="about">
+                        <a class="btn rounded-circle d-block position-absolute d-flex align-items-center justify-content-center"
+                            href="#"><i class="fa-solid fa-caret-right text-light "></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <div class="main-heading">
+                            <p>About Us</p>
+                            <h2>Cooking Since 1990</h2>
+                        </div>
+                        <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
+                            mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida
+                            condimentum, viverra quis sem.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur
+                            facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum,
+                            viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur
+                            convallis porttitor. Aliquam interdum at lacus non blandit.</p>
+                        <a class="btn main-btn mt-4" href="#booking">Book A Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features -->
+    <div class="feature pt-5 pb-5" id="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="feature-text">
+                        <div class="main-heading">
+                            <p>Why Choose Us</p>
+                            <h2>Our Key Features</h2>
+                        </div>
+                        <div class="images mt-3 mb-4 d-flex flex-wrap overflow-hidden">
+                            <div class="image overflow-hidden w-50">
+                                <img class="img-fluid" src="images/feature-1.jpg" alt="feature">
+                            </div>
+                            <div class="image overflow-hidden w-50">
+                                <img class="img-fluid" src="images/feature-2.jpg" alt="feature">
+                            </div>
+                            <div class="image overflow-hidden w-50">
+                                <img class="img-fluid" src="images/feature-3.jpg" alt="feature">
+                            </div>
+                            <div class="image overflow-hidden w-50">
+                                <img class="img-fluid" src="images/feature-4.jpg" alt="feature">
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consec adipis elit. Phasel nec preti mi. Curabit facilis ornare
+                            velit non vulputa. Aliquam metus tortor, auctor id gravida condime, viverra quis sem.
+                            Curabit non nisl nec nisi sceleri maximus</p>
+                        <a class="btn main-btn w-100 mt-4 p-2" href="#booking">Book A table</a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="feature-content text-center text-md-start">
+                        <div class="row">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <div
+                                    class="feat d-flex flex-column justify-content-between align-items-center align-items-md-start position-relative">
+                                    <img class="img-fluid w-25" src="images/cooking.png" alt="chef">
+                                    <h4 class="mt-3 mb-3">World best Chef</h4>
+                                    <p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare
+                                        velit non vulput metus tortor</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div
+                                    class="feat d-flex flex-column justify-content-between align-items-center align-items-md-start position-relative">
+                                    <img class="img-fluid w-25" src="images/harvest.png" alt="chef">
+                                    <h4 class="mt-3 mb-3">Natural ingredients</h4>
+                                    <p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare
+                                        velit non vulput metus tortor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <div
+                                    class="feat d-flex flex-column justify-content-between align-items-center align-items-md-start position-relative">
+                                    <img class="img-fluid w-25" src="images/medal.png" alt="chef">
+                                    <h4 class="mt-3 mb-3">Best quality products</h4>
+                                    <p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare
+                                        velit non vulput metus tortor</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div
+                                    class="feat d-flex flex-column justify-content-between align-items-center align-items-md-start position-relative">
+                                    <img class="img-fluid w-25" src="images/fruits.png" alt="chef">
+                                    <h4 class="mt-3 mb-3">Fresh vegetables & fruits</h4>
+                                    <p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare
+                                        velit non vulput metus tortor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <div
+                                    class="feat d-flex flex-column justify-content-between align-items-center align-items-md-start position-relative">
+                                    <img class="img-fluid w-25" src="images/delivery-man.png" alt="chef">
+                                    <h4 class="mt-3 mb-3">Fastest door delivery</h4>
+                                    <p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare
+                                        velit non vulput metus tortor</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div
+                                    class="feat d-flex flex-column justify-content-between align-items-center align-items-md-start position-relative">
+                                    <img class="img-fluid w-25" src="images/burger.png" alt="chef">
+                                    <h4 class="mt-3 mb-3">Ground beef & Low fat</h4>
+                                    <p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare
+                                        velit non vulput metus tortor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products -->
+    <div class="products text-center">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="product bg-white p-4 d-flex flex-column gap-3 align-items-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-burger product-icon d-block position-relative text-center"></i>
+                        </div>
+                        <h3>Burgers</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non
+                            vulputa. Aliquam metus tortor auctor quis sem.</p>
+                        <a class="d-block position-relative" href="#menu">View Menu</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="product bg-white p-4 d-flex flex-column gap-3 align-items-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-cookie product-icon d-block position-relative text-center"></i>
+                        </div>
+                        <h3>Snacks</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non
+                            vulputa. Aliquam metus tortor auctor quis sem.</p>
+                        <a class="d-block position-relative" href="#menu">View Menu</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="product bg-white p-4 d-flex flex-column gap-3 align-items-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-martini-glass product-icon d-block position-relative text-center"></i>
+                        </div>
+                        <h3>Beverages</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non
+                            vulputa. Aliquam metus tortor auctor quis sem.</p>
+                        <a class="d-block position-relative" href="#menu">View Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu -->
+    <div class="menu" id="menu">
+        <div class="container">
+            <div class="main-heading text-center">
+                <p>Food Menu</p>
+                <h2>Delicious Food Menu</h2>
+            </div>
+            <ul class="text-center mt-5 mb-5 d-flex align-items-center justify-content-center">
+                <li class="d-block p-2 active position-relative">
+                    <a class="text-light" href="#">Burgers</a>
+                    <div class="num text-center text-light position-absolute">
+                        5
+                    </div>
+                </li>
+                <li class="d-block p-2 ms-3 me-3 position-relative">
+                    <a class="text-light" href="#">Snacks</a>
+                    <div class="num text-center text-light position-absolute">
+                        10
+                    </div>
+                </li>
+                <li class="d-block p-2 me-3 position-relative">
+                    <a class="text-light" href="#">Beverages</a>
+                    <div class="num text-center text-light position-absolute">
+                        20
+                    </div>
+                </li>
+            </ul>
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="menu-content">
+                        <div class="row w-100 align-items-center mb-4">
+                            <div class="col-sm-2">
+                                <div class="menu-img">
+                                    <img class="img-fluid rounded-circle" src="images/menu-burger.jpg" alt="menu">
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="menu-item">
+                                    <div class="item-info w-100 d-flex justify-content-between">
+                                        <div class="item-name">
+                                            <h4>Mini cheese Burger</h4>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                        <div class="item-price fs-4 fw-bold">
+                                            $9.00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row w-100 align-items-center mb-4">
+                            <div class="col-sm-2">
+                                <div class="menu-img">
+                                    <img class="img-fluid rounded-circle" src="images/menu-burger.jpg" alt="menu">
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="menu-item">
+                                    <div class="item-info w-100 d-flex justify-content-between">
+                                        <div class="item-name">
+                                            <h4>Double size burger</h4>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                        <div class="item-price fs-4 fw-bold">
+                                            $11.00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row w-100 align-items-center mb-4">
+                            <div class="col-sm-2">
+                                <div class="menu-img">
+                                    <img class="img-fluid rounded-circle" src="images/menu-burger.jpg" alt="menu">
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="menu-item">
+                                    <div class="item-info w-100 d-flex justify-content-between">
+                                        <div class="item-name">
+                                            <h4>Bacon, EGG and Cheese</h4>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                        <div class="item-price fs-4 fw-bold">
+                                            $13.00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row w-100 align-items-center mb-4">
+                            <div class="col-sm-2">
+                                <div class="menu-img">
+                                    <img class="img-fluid rounded-circle" src="images/menu-burger.jpg" alt="menu">
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="menu-item">
+                                    <div class="item-info w-100 d-flex justify-content-between">
+                                        <div class="item-name">
+                                            <h4>Pulled porx Burger</h4>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                        <div class="item-price fs-4 fw-bold">
+                                            $18.00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row w-100 align-items-center">
+                            <div class="col-sm-2">
+                                <div class="menu-img">
+                                    <img class="img-fluid rounded-circle" src="images/menu-burger.jpg" alt="menu">
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="menu-item">
+                                    <div class="item-info w-100 d-flex justify-content-between">
+                                        <div class="item-name">
+                                            <h4>Fried chicken Burger</h4>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                        <div class="item-price fs-4 fw-bold">
+                                            $22.00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="menu-image">
+                        <img class="img-fluid" src="images/menu-burger-img.jpg" alt="menu">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Chef -->
+    <div class="chef text-center" id="chef">
+        <div class="container">
+            <div class="main-heading mb-5">
+                <p>Our Team</p>
+                <h2>Our Master Chef</h2>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="member overflow-hidden">
+                        <div class="image mb-4 overflow-hidden position-relative">
+                            <img class="img-fluid w-100 d-block position-relative" src="images/team-1.jpg" alt="chef">
+                            <ul
+                                class="member-links list-unstyled position-absolute p-0 text-center text-light d-flex align-items-center gap-2">
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="member-info">
+                            <h4>Adam Phillips</h4>
+                            <p>CEO, Co Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="member overflow-hidden">
+                        <div class="image mb-4 overflow-hidden position-relative">
+                            <img class="img-fluid w-100 d-block position-relative" src="images/team-2.jpg" alt="chef">
+                            <ul
+                                class="member-links list-unstyled position-absolute p-0 text-center text-light d-flex align-items-center gap-2">
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="member-info">
+                            <h4>Dylan Adams</h4>
+                            <p>Master CHef</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="member overflow-hidden">
+                        <div class="image mb-4 overflow-hidden position-relative">
+                            <img class="img-fluid w-100 d-block position-relative" src="images/team-3.jpg" alt="chef">
+                            <ul
+                                class="member-links list-unstyled position-absolute p-0 text-center text-light d-flex align-items-center gap-2">
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="member-info">
+                            <h4>Jhon Doe</h4>
+                            <p>Master Chef</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="member overflow-hidden">
+                        <div class="image mb-4 overflow-hidden position-relative">
+                            <img class="img-fluid w-100 d-block position-relative" src="images/team-4.jpg" alt="chef">
+                            <ul
+                                class="member-links list-unstyled position-absolute p-0 text-center text-light d-flex align-items-center gap-2">
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="p-1 rounded-circle">
+                                    <a class="text-light fs-4" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="member-info">
+                            <h4>Josh Dunn</h4>
+                            <p>Master Chef</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonials -->
+    <div class="testimonials text-center">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="testi bg-white p-4">
+                        <img class="img-fluid rounded-circle" src="images/testimonial-1.jpg" alt="testimonials">
+                        <p class="mt-4 mb-4">Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis
+                            ornare velit non vulput metus tortor</p>
+                        <h5>Client Name</h5>
+                        <p>Profession</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="testi bg-white p-4">
+                        <img class="img-fluid rounded-circle" src="images/testimonial-2.jpg" alt="testimonials">
+                        <p class="mt-4 mb-4">Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis
+                            ornare velit non vulput metus tortor</p>
+                        <h5>Client Name</h5>
+                        <p>Profession</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testi bg-white p-4">
+                        <img class="img-fluid rounded-circle" src="images/testimonial-3.jpg" alt="testimonials">
+                        <p class="mt-4 mb-4">Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis
+                            ornare velit non vulput metus tortor</p>
+                        <h5>Client Name</h5>
+                        <p>Profession</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-unstyled mt-5 d-flex justify-content-center align-items-center gap-2">
+                <li class="rounded-circle active"></li>
+                <li class="rounded-circle"></li>
+                <li class="rounded-circle"></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Contact Us -->
+    <div class="contact-us pt-5 pb-5" id="contact">
+        <div class="main-heading text-center mb-5">
+            <p>Contact Us</p>
+            <h2>Contact For Any Query</h2>
+        </div>
+        <div class="container pt-5 pb-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="contact d-flex gap-3 align-items-center">
+                        <div class="contact-icon text-center rounded-circle p-3">
+                            <i class="fa-solid fa-location-dot text-light lh-base fs-5"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h5>Address</h5>
+                            <p class="m-0">123 Street, NY, USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="contact d-flex gap-3 align-items-center">
+                        <div class="contact-icon text-center rounded-circle p-3">
+                            <i class="fa-solid fa-phone text-light lh-base fs-5"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h5>Call Us</h5>
+                            <p class="m-0">+2 01207933578</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="contact d-flex gap-3 align-items-center">
+                        <div class="contact-icon text-center rounded-circle p-3">
+                            <i class="fa-solid fa-envelope text-light lh-base fs-5"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h5>Email Us</h5>
+                            <p class="m-0">ahmedelbahy06@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="contact d-flex gap-3 align-items-center">
+                        <div class="contact-icon text-center rounded-circle p-3">
+                            <i class="fa-solid fa-share-nodes text-light lh-base fs-5"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h5>Follow Us</h5>
+                            <ul class="list-unstyled d-flex gap-3 align-items-center justify-content-center">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Suggest  -->
+    <div class="suggest pt-5 pb-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="suggest-video">
+                        <video controls loop autoplay muted>
+                            <source src="images/short video animation ad.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="suggest-form">
+                        <form name="suggest" action="#">
+                            <div class="suggest-data w-100 p-2 mb-3">
+                                <input class="w-100 p-1" type="text" placeholder="Your Name">
+                            </div>
+                            <div class="suggest-data w-100 p-2 mb-3">
+                                <input class="w-100 p-1" type="email" placeholder="Your E-mail">
+                            </div>
+                            <div class="suggest-data w-100 p-2 mb-3">
+                                <input class="w-100 p-1" type="text" placeholder="Subject">
+                            </div>
+                            <div class="suggest-data w-100 p-2 mb-3">
+                                <textarea placeholder="Write Your Suggest Or Problem"></textarea>
+                            </div>
+                            <div class="send-data">
+                                <input type="submit" value="Send Message">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blogs -->
+    <div class="blogs" id="blog">
+        <div class="container">
+            <div class="main-heading text-center mb-5">
+                <p>Food Blog</p>
+                <h2>Latest From Food Blog</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="blog">
+                        <div class="image">
+                            <img class="img-fluid w-100" src="images/blog-1.jpg" alt="blog">
+                        </div>
+                        <div class="blog-text bg-white p-3 position-relative">
+                            <h4>Lorem ipsum dolor sit amet</h4>
+                            <p>
+                                <span><i class="fa-solid fa-user"></i></span> Admin
+                                <span class="ms-3"><i class="fa-solid fa-list"></i></i></span> Food
+                                <span class="ms-3"><i class="fa-solid fa-calendar-days"></i></span> 01-Jan-2022
+                                <span class="ms-3"><i class="fa-solid fa-comments"></i></span> 10
+                            </p>
+                            <p class="fs-6 mt-4 mb-4">Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili
+                                ornare velit non vulpte liqum metus tortor. Lorem ipsum dolor sit amet elit. Neca pretim
+                                miura bitur facili ornare velit non vulpte</p>
+                            <a class="btn main-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="blog">
+                        <div class="image">
+                            <img class="img-fluid w-100" src="images/blog-2.jpg" alt="blog">
+                        </div>
+                        <div class="blog-text bg-white p-3 position-relative">
+                            <h4>Lorem ipsum dolor sit amet</h4>
+                            <p>
+                                <span><i class="fa-solid fa-user"></i></span> Admin
+                                <span class="ms-3"><i class="fa-solid fa-list"></i></i></span> Food
+                                <span class="ms-3"><i class="fa-solid fa-calendar-days"></i></span> 01-Jan-2022
+                                <span class="ms-3"><i class="fa-solid fa-comments"></i></span> 10
+                            </p>
+                            <p class="fs-6 mt-4 mb-4">Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili
+                                ornare velit non vulpte liqum metus tortor. Lorem ipsum dolor sit amet elit. Neca pretim
+                                miura bitur facili ornare velit non vulpte</p>
+                            <a class="btn main-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer pt-5 pb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="adress">
+                        <h4>Our Address</h4>
+                        <div class="adress-data mt-5 mb-4">
+                            <i class="fa-solid fa-location-dot me-3"></i>
+                            <p class="d-inline-block">123 Street, New York, USA</p>
+                            <br>
+                            <i class="fa-solid fa-phone me-3"></i>
+                            <p class="d-inline-block">+2 01207933578</p>
+                            <br>
+                            <i class="fa-solid fa-envelope me-3"></i>
+                            <p class="d-inline-block">ahmedelbahy06@gmail.com</p>
+                        </div>
+                        <ul class="adress-links list-unstyled text-center text-light d-flex align-items-center gap-2">
+                            <li class="p-1 rounded-circle">
+                                <a class="text-light fs-5" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li class="p-1 rounded-circle">
+                                <a class="text-light fs-5" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="p-1 rounded-circle">
+                                <a class="text-light fs-5" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li class="p-1 rounded-circle">
+                                <a class="text-light fs-5" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                            <li class="p-1 rounded-circle">
+                                <a class="text-light fs-5" href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="quick-links">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled mt-5 d-flex flex-column gap-3">
+                            <li><i class="fa-solid fa-angle-right me-2"></i><a href="#">Terms OF Use</a></li>
+                            <li><i class="fa-solid fa-angle-right me-2"></i><a href="#">Privacy Policy</a></li>
+                            <li><i class="fa-solid fa-angle-right me-2"></i><a href="#">Cookies</a></li>
+                            <li><i class="fa-solid fa-angle-right me-2"></i><a href="#">Help</a></li>
+                            <li><i class="fa-solid fa-angle-right me-2"></i><a href="#">FQAs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="newsletter">
+                        <h4>Newsletter</h4>
+                        <p class="mt-5 mb-4">Lorem ipsum dolor sit amet elit. Quisque eu lectus a leo dictum nec non
+                            quam. Tortor eu placerat rhoncus, lorem quam iaculis felis, sed lacus neque id eros.</p>
+                        <form name="subs" action="#">
+                            <div class="subs p-2 d-flex align-items-center justify-content-between">
+                                <input class="d-block" type="email" placeholder="E-mail">
+                                <input class="d-block" type="submit" value="Suscribe">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End  -->
+    <div class="end text-center pt-4 pb-4">
+        <div class="container fw-bold">&copy; All Rights Reserved. Coded By <span>Ahmed Elbahy</span>
+        </div>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

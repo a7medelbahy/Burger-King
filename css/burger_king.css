@@ -1,0 +1,570 @@
+/* Start Variable */
+:root {
+  --orange-color: #fbaf32;
+  --green-color: #719a0a;
+  --section-background: rgba(0, 0, 0, 0.04);
+  --main-transition: 0.5s;
+  --fade_black-color: #666666;
+  --main-black-color: rgba(0, 0, 0, 0.8);
+  --secondary-black-color: #757575;
+  --main-padding: 100px;
+}
+/* End Variable */
+
+/* Start Global Rules  */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+.main-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--orange-color);
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: var(--main-transition);
+  border: 2px solid var(--orange-color);
+}
+.main-btn:hover {
+  color: var(--orange-color);
+  background: none;
+}
+.main-heading p {
+  color: var(--green-color);
+  font-size: 18px;
+}
+.main-heading h2 {
+  color: var(--main-black-color);
+  font-size: 40px;
+}
+a {
+  text-decoration: none;
+}
+/* End Global Rules  */
+
+/* Start Navbar */
+.navbar {
+  box-shadow: 0px 0px 10px 4px var(--fade_black-color);
+  z-index: 1000;
+}
+.navbar .navbar-brand {
+  color: var(--orange-color);
+}
+.navbar .navbar-brand span {
+  color: var(--green-color);
+  transition: var(--main-transition);
+}
+.navbar .navbar-brand:hover span {
+  color: var(--orange-color);
+}
+.navbar .nav-link {
+  color: #666666;
+  transition: var(--main-transition);
+  font-size: 18px;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--orange-color);
+}
+/* End Navbar */
+
+/* Start Landing */
+.landing {
+  background-image: url(../images/carousel-1.jpg);
+  background-size: cover;
+  height: calc(100vh - 74px);
+  z-index: 0;
+}
+.landing::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.landing h2 {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+.landing h2 span {
+  color: var(--orange-color);
+}
+.landing .book {
+  background-color: var(--green-color);
+  border-color: var(--green-color);
+}
+.landing .book:hover {
+  background: none;
+  color: var(--green-color);
+}
+/* End Landing */
+
+/* Start Booking */
+.booking {
+  background-color: var(--section-background);
+}
+.booking .booking-text > p {
+  color: var(--secondary-black-color);
+}
+.booking .booking-form {
+  background-color: var(--orange-color);
+}
+.booking .booking-form input {
+  border: none;
+  background: none;
+  caret-color: white;
+}
+.booking .booking-form input::placeholder {
+  color: white;
+}
+.booking .booking-form input:focus {
+  outline: none;
+}
+.booking .booking-form .enter-data {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.booking .booking-form input[type="submit"] {
+  background-color: white;
+  color: var(--orange-color);
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: var(--main-transition);
+  font-size: 18px;
+}
+.booking .booking-form input[type="submit"]:hover {
+  background-color: var(--orange-color);
+  color: white;
+}
+/* End Booking */
+
+/* Start About */
+.about {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.about .image img {
+  border-radius: 20px;
+}
+.about .image a {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  font-size: 75px;
+}
+.about .image .btn {
+  background-color: var(--orange-color);
+}
+.about .image .btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 7px inset var(--orange-color);
+  animation: clicking 1s infinite linear;
+}
+@keyframes clicking {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+.about .about-text > p {
+  color: var(--secondary-black-color);
+}
+/* End About */
+
+/* Start Feature */
+.feature .feature-text .images {
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.feature .feature-text .images img {
+  transition: var(--main-transition);
+}
+.feature .feature-text .images img:hover {
+  transform: scale(1.1);
+}
+.feature .feature-text > p {
+  color: var(--secondary-black-color);
+}
+.feature .feat h4 {
+  color: var(--main-black-color);
+}
+.feature .feat p {
+  color: var(--secondary-black-color);
+}
+/* End Feature *
+/
+/* Start Products */
+.products {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  background-color: var(--section-background);
+}
+.products .product {
+  border-radius: 20px;
+  transition: var(--main-transition);
+  box-shadow: 0px 0px 5px 5px #ccc;
+}
+.products .product .icon {
+  width: 75px;
+  height: 70px;
+  border: 3px dotted var(--orange-color);
+  border-radius: 50%;
+  border-bottom: none;
+  border-right: none;
+  transition: var(--main-transition);
+}
+.products .product .icon .product-icon {
+  font-size: 55px;
+  color: var(--orange-color);
+  bottom: -15px;
+  left: 10px;
+  transition: var(--main-transition);
+}
+.products .product:hover {
+  box-shadow: none;
+}
+.products .product:hover .icon .product-icon {
+  color: var(--green-color);
+}
+.products .product:hover .icon {
+  border-color: var(--green-color);
+}
+.products .product a {
+  color: var(--orange-color);
+  transition: var(--main-transition);
+}
+.products .product a:hover {
+  color: var(--green-color);
+}
+.products .product a::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: var(--orange-color);
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: var(--main-transition);
+}
+.products .product a:hover::after {
+  background-color: var(--green-color);
+  width: 100%;
+}
+/* End Products */
+/* Start Menu  */
+.menu {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.menu ul li {
+  background-color: var(--orange-color);
+  border-radius: 10px;
+  width: fit-content;
+  transition: var(--main-transition);
+}
+.menu ul li:hover,
+.menu ul li.active {
+  background-color: var(--green-color);
+}
+.menu ul li .num {
+  background-color: var(--green-color);
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  transition: var(--main-transition);
+  opacity: 0;
+}
+.menu ul li:hover .num {
+  bottom: 50px;
+  opacity: 1;
+}
+.menu ul li .num::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-width: 10px 7px 7px 7px;
+  border-style: solid;
+  border-color: var(--green-color) transparent transparent transparent;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.menu .menu-content .item-name h4 {
+  color: var(--main-black-color);
+}
+.menu .menu-content .item-name p {
+  color: var(--secondary-black-color);
+}
+.menu .menu-content .item-price {
+  color: var(--orange-color);
+}
+.menu .menu-image img {
+  border-radius: 20px;
+}
+/* End Menu  */
+/* Start Chef */
+.chef {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.chef .member {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  transition: var(--main-transition);
+}
+.chef .member h4 {
+  color: var(--main-black-color);
+}
+.chef .member p {
+  color: var(--secondary-black-color);
+}
+.chef .member .member-links {
+  bottom: -60px;
+  transition: var(--main-transition);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.chef .member:hover .member-links {
+  bottom: calc(50% - 45px);
+  /* transform: translateY(-50%); */
+}
+.chef .member .member-links li {
+  background-color: var(--orange-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: var(--main-transition);
+}
+.chef .member .member-links li:hover {
+  background-color: var(--green-color);
+}
+/* End Chef */
+/* Start Testimonials */
+.testimonials {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  background-color: var(--section-background);
+}
+.testimonials .testi {
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 5px #ccc;
+  transition: var(--main-transition);
+}
+.testimonials .testi:hover {
+  box-shadow: none;
+}
+.testimonials .testi p {
+  color: var(--secondary-black-color);
+}
+.testimonials .testi h5 {
+  color: var(--main-black-color);
+}
+.testimonials ul li {
+  background-color: var(--orange-color);
+  width: 15px;
+  height: 15px;
+}
+.testimonials ul li.active {
+  background-color: var(--green-color);
+}
+/* End Testimonials */
+/* Start Contact */
+.contact-us .container {
+  background-color: var(--section-background);
+}
+.contact-us .container .contact-icon {
+  background-color: var(--orange-color);
+  width: 50px;
+  height: 50px;
+}
+.contact-us .container .contact-info h5 {
+  color: var(--green-color);
+}
+.contact-us .container .contact-info p {
+  color: var(--secondary-black-color);
+}
+.contact-us .container .contact-info ul li a {
+  color: var(--orange-color);
+  font-size: 18px;
+  transition: var(--main-transition);
+}
+.contact-us .container .contact-info ul li a:hover {
+  color: var(--green-color);
+}
+/* End Contact */
+/* Start Suggest */
+.suggest .suggest-video video {
+  width: 100%;
+  border-radius: 20px;
+}
+.suggest .suggest-data {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+.suggest .suggest-form input,
+.suggest .suggest-form textarea {
+  background: none;
+  border: none;
+}
+.suggest .suggest-form textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+}
+.suggest .suggest-form input:focus,
+.suggest .suggest-form textarea:focus {
+  outline: none;
+}
+.suggest .suggest-form input[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--orange-color);
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: var(--main-transition);
+  border: 2px solid var(--orange-color);
+}
+.suggest .suggest-form input[type="submit"]:hover {
+  color: var(--orange-color);
+  background: none;
+}
+/* End Suggest */
+/* Start Blog */
+.blogs {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.blogs .blog img {
+  border-radius: 20px;
+}
+.blogs .blog .blog-text {
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 5px #ccc;
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+}
+.blogs .blog .blog-text p {
+  font-size: 14px;
+  color: var(--secondary-black-color);
+}
+.blogs .blog .blog-text p span {
+  color: var(--orange-color);
+}
+/* End Blog */
+/* Start Footer  */
+.footer {
+  background-color: var(--section-background);
+}
+.footer h4 {
+  color: var(--orange-color);
+  position: relative;
+}
+.footer h4::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  bottom: -10px;
+  left: 0;
+  height: 2px;
+  background-color: var(--green-color);
+}
+.footer .adress p {
+  color: var(--main-black-color);
+}
+.footer .adress .adress-data svg {
+  color: var(--orange-color);
+}
+.footer .adress .adress-links li {
+  width: 35px;
+  height: 35px;
+  background-color: var(--orange-color);
+  transition: var(--main-transition);
+}
+.footer .adress .adress-links li:hover {
+  background-color: var(--green-color);
+}
+.footer .quick-links ul li svg {
+  color: var(--orange-color);
+}
+.footer .quick-links ul li a {
+  color: var(--main-black-color);
+  transition: var(--main-transition);
+  display: inline-block;
+}
+.footer .quick-links ul li a:hover {
+  color: var(--orange-color);
+  transform: translateX(10px);
+}
+.footer .newsletter p {
+  color: var(--main-black-color);
+}
+.footer .newsletter .subs {
+  border: 2px solid var(--orange-color);
+  border-radius: 10px;
+}
+.footer .newsletter .subs input {
+  border: none;
+  background: none;
+}
+.footer .newsletter .subs input:focus {
+  outline: none;
+}
+.footer .newsletter .subs input[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: var(--orange-color);
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: var(--main-transition);
+  border: 2px solid var(--orange-color);
+}
+.footer .newsletter .subs input[type="submit"]:hover {
+  color: var(--orange-color);
+  background: none;
+}
+/* End Footer  */
+
+/* Start End  */
+.end .container {
+  color: var(--main-black-color);
+}
+.end .container span {
+  color: var(--orange-color);
+  transition: var(--main-transition);
+}
+.end .container span:hover {
+  color: var(--green-color);
+}
+/* End End  */
